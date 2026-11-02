@@ -10,7 +10,7 @@ A collection of beginner machine learning projects built with Python, pandas, sc
 | 1 | Insurance Charges | Regression | insurance-charges-prediction.ipynb |
 | 2 | Heart Disease | Classification | 2.ipynb |
 | 3 | Titanic Survival | Classification | TITANIC_SURVIVAL.ipynb |
-| 4 | Ford Car Prediction | Regression | ford.ipynb |
+| 4 | Ford Car Prediction | Regression | ford_car_prediction.ipynb |
 
 ## 1. Insurance Charges
 Predicts medical insurance charges from age, BMI, smoking status and other features.
