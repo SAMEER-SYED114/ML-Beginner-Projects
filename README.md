@@ -7,7 +7,7 @@ A collection of beginner machine learning projects built with Python, pandas, sc
 
 | # | Project | Task | Notebook |
 |---|---------|------|----------|
-| 1 | Insurance Charges | Regression | 1.ipynb |
+| 1 | Insurance Charges | Regression | insurance-charges-prediction.ipynb |
 | 2 | Heart Disease | Classification | 2.ipynb |
 | 3 | Titanic Survival | Classification | TITANIC_SURVIVAL.ipynb |
 | 4 | Ford Car Prediction | Regression | ford.ipynb |
