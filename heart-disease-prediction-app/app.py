@@ -25,9 +25,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---------- Load files ----------
-model = joblib.load("Logistic_Regression_model.pkl")
-scaler = joblib.load("scaler.pkl")
-expected_columns = joblib.load("columns.pkl")
+from pathlib import Path
+BASE = Path(__file__).parent
+
+model = joblib.load(BASE / "Logistic_Regression_model.pkl")
+scaler = joblib.load(BASE / "scaler.pkl")
+expected_columns = joblib.load(BASE / "columns.pkl")
 
 # ---------- Header ----------
 st.markdown(
