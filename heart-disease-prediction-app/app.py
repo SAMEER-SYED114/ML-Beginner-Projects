@@ -25,12 +25,21 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---------- Load files ----------
+# ---------- Load files ----------
 from pathlib import Path
 BASE = Path(__file__).parent
 
-model = joblib.load(BASE / "Logistic_Regression_model.pkl")
-scaler = joblib.load(BASE / "scaler.pkl")
-expected_columns = joblib.load(BASE / "columns.pkl")
+@st.cache_resource
+def load_files():
+    return (
+        joblib.load(BASE / "Logistic_Regression_model.pkl"),
+        joblib.load(BASE / "scaler.pkl"),
+        joblib.load(BASE / "columns.pkl"),
+    )
+
+model, scaler, expected_columns = load_files()
+
+# ---------- Header ----------
 
 # ---------- Header ----------
 st.markdown(
