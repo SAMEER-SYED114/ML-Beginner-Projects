@@ -24,7 +24,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ---------- Load files ----------
+
 # ---------- Load files ----------
 from pathlib import Path
 BASE = Path(__file__).parent
